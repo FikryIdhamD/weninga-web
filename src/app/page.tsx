@@ -549,22 +549,37 @@ export default async function Home() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Bagian Email */}
                 <div className="space-y-2">
                   <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                     Email Resmi
                   </p>
-                  <p className="text-weninga-forest font-medium">
+                  {/* Menambahkan tag link mailto */}
+                  <a
+                    href="mailto:hello@weninga.id?subject=Tanya%20Produk%20Weninga"
+                    className="text-weninga-forest font-medium hover:text-weninga-sage transition-colors duration-300 block"
+                  >
                     hello@weninga.id
-                  </p>
+                  </a>
                 </div>
+
+                {/* Bagian WhatsApp */}
                 <div className="space-y-2">
                   <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                     WhatsApp CS
                   </p>
-                  <p className="text-weninga-forest font-medium">
+                  {/* Menambahkan tag link WhatsApp */}
+                  <a
+                    href="https://wa.me/6281234567890?text=Halo%20Weninga,%20saya%20ingin%20tanya%20tentang%20produknya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-weninga-forest font-medium hover:text-weninga-sage transition-colors duration-300 block"
+                  >
                     +62 812-3456-7890
-                  </p>
+                  </a>
                 </div>
+
+                {/* Lokasi (Tetap) */}
                 <div className="space-y-2">
                   <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                     Lokasi Studio
@@ -599,7 +614,7 @@ export default async function Home() {
                     </label>
                     <input
                       type="text"
-                      placeholder="Fikry Idham"
+                      placeholder="Jhon Doe"
                       className="w-full bg-white border-none rounded-2xl px-6 py-4 text-sm focus:ring-2 focus:ring-weninga-sage outline-none shadow-sm"
                     />
                   </div>
